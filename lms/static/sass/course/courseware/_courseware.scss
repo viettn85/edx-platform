@@ -129,9 +129,13 @@ html.video-fullscreen {
 
   .course-content,
   .courseware-results-wrapper {
-    @extend .content;
-
+    box-sizing: border-box;
+    padding: 2em 2.5em;
     line-height: 1.6;
+
+    @media print {
+      box-shadow: none;
+    }
 
     .xblock {
       overflow-wrap: break-word;

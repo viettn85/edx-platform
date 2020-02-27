@@ -26,14 +26,13 @@ from opaque_keys import InvalidKeyError
 from opaque_keys.edx.keys import CourseKey
 from six import text_type
 from six.moves.urllib.parse import urljoin  # pylint: disable=import-error
-
-from instructor_task.config.waffle import new_ui_for_data_download_csv_reports
 from xblock.field_data import DictFieldData
 from xblock.fields import ScopeIds
 
 from bulk_email.api import is_bulk_email_feature_enabled
 from course_modes.models import CourseMode, CourseModesArchive
 from edxmako.shortcuts import render_to_response
+from instructor_task.config.waffle import new_ui_for_data_download_csv_reports
 from lms.djangoapps.certificates import api as certs_api
 from lms.djangoapps.certificates.models import (
     CertificateGenerationConfiguration,
@@ -57,10 +56,7 @@ from openedx.core.lib.url_utils import quote_slashes
 from openedx.core.lib.xblock_utils import wrap_xblock
 from shoppingcart.models import Coupon, CourseRegCodeItem, PaidCourseRegistration
 from student.models import CourseEnrollment
-from student.roles import (
-    CourseFinanceAdminRole, CourseInstructorRole,
-    CourseSalesAdminRole, CourseStaffRole
-)
+from student.roles import CourseFinanceAdminRole, CourseInstructorRole, CourseSalesAdminRole, CourseStaffRole
 from util.json_request import JsonResponse
 from xmodule.html_module import HtmlBlock
 from xmodule.modulestore.django import modulestore

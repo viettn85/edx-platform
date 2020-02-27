@@ -22,8 +22,8 @@ from lms.djangoapps.instructor_task.api_helper import (
     check_entrance_exam_problems_for_rescoring,
     encode_entrance_exam_and_student_input,
     encode_problem_and_student_input,
-    submit_task,
-    encode_task_input
+    encode_task_input,
+    submit_task
 )
 from lms.djangoapps.instructor_task.models import InstructorTask
 from lms.djangoapps.instructor_task.tasks import (

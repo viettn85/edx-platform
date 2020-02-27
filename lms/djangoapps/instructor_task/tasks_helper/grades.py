@@ -14,6 +14,7 @@ import six
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from lazy import lazy
+from opaque_keys.edx.keys import UsageKey
 from pytz import UTC
 from six import text_type
 from six.moves import zip, zip_longest
@@ -29,12 +30,11 @@ from lms.djangoapps.grades.api import prefetch_course_and_subsection_grades
 from lms.djangoapps.instructor_analytics.basic import list_problem_responses
 from lms.djangoapps.instructor_analytics.csvs import format_dictlist
 from lms.djangoapps.instructor_task.config.waffle import (
-    optimize_get_learners_switch_enabled,
     new_ui_for_data_download_csv_reports,
+    optimize_get_learners_switch_enabled
 )
 from lms.djangoapps.teams.models import CourseTeamMembership
 from lms.djangoapps.verify_student.services import IDVerificationService
-from opaque_keys.edx.keys import UsageKey
 from openedx.core.djangoapps.content.block_structure.api import get_course_in_cache
 from openedx.core.djangoapps.course_groups.cohorts import bulk_cache_cohorts, get_cohort, is_course_cohorted
 from openedx.core.djangoapps.user_api.course_tag.api import BulkCourseTags

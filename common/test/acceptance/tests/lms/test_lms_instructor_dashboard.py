@@ -28,10 +28,10 @@ from common.test.acceptance.pages.studio.overview import CourseOutlinePage as St
 from common.test.acceptance.tests.helpers import (
     EventsTestMixin,
     UniqueCourseTest,
+    auto_auth,
     create_multiple_choice_problem,
     disable_animations,
-    get_modal_alert,
-    auto_auth
+    get_modal_alert
 )
 from openedx.core.lib.tests import attr
 

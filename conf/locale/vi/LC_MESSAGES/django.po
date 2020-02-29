@@ -4843,7 +4843,7 @@ msgstr "Quyên góp"
 #: themes/stanford-style/lms/templates/footer.html
 #: themes/stanford-style/lms/templates/static_templates/about.html
 msgid "About"
-msgstr "Về "
+msgstr "Thông tin"
 
 #: lms/djangoapps/branding/api.py
 #, python-brace-format
@@ -12600,13 +12600,13 @@ msgstr "Tìm khóa học"
 
 #: lms/templates/index_overlay.html lms/templates/register-sidebar.html
 msgid "Welcome to {platform_name}"
-msgstr "Chào mừng bạn đến với {platform_name}"
+msgstr "Chào mừng các bạn đến với {platform_name}"
 
 #. Translators: 'Open edX' is a registered trademark, please keep this
 #. untranslated. See http://open.edx.org for more information.
 #: lms/templates/index_overlay.html
 msgid "It works! Powered by Open edX{registered_trademark}"
-msgstr ""
+msgstr "Chạy rồi :D! Powered by Open edX{registered_trademark}"
 
 #: lms/templates/invalid_email_key.html
 msgid "Invalid email change key"
